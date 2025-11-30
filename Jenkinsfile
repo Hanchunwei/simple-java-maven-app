@@ -1,5 +1,10 @@
 pipeline {
     agent any
+
+    tools {
+        maven 'Maven 3.9.11'   // ← 替换为你的实际 Name！
+    }
+
     stages {
         stage('Build') {
             steps {
