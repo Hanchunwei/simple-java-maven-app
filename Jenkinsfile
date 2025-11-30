@@ -16,7 +16,7 @@ pipeline {
                         extensions: [],
                         userRemoteConfigs: [[
                             url: 'git@github.com:Hanchunwei/simple-java-maven-app.git',
-                            credentialsId: '6d4c042d-e973-41d3-abae-e17f63392825'
+                            credentialsId: '604b0480-6b4f-4852-beaa-e1006a8cd4ad'
                         ]]
                     ])
                 }
