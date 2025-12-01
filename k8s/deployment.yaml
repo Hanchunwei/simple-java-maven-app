@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springboot-app
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: springboot-app
+  template:
+    metadata:
+      labels:
+        app: springboot-app
+    spec:
+      containers:
+        - name: app
+          image: host.docker.internal:5000/springboot-app:1  # ← 这行会被 sed 替换
+          ports:
+            - containerPort: 8080
+          imagePullPolicy: Always
