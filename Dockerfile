@@ -1,4 +1,4 @@
-FROM FROM registry.cn-hangzhou.aliyuncs.com/library/openjdk:17-jdk-slim
+FROM registry.cn-hangzhou.aliyuncs.com/library/openjdk:17-jdk-slim
 
 WORKDIR /app
 
